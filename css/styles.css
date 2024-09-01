@@ -1,0 +1,90 @@
+/** GENERALES */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey700: hsl(0, 0%, 20%);
+  --Grey800: hsl(0, 0%, 12%);
+  --Grey900: hsl(0, 0%, 8%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+}
+body{
+    background: var(--Grey900);
+}
+.container{
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.card-container{
+    background: var(--Grey800);
+    max-width: 300px;
+    width: 100%;
+    height: 520px;
+    padding: 24px;
+    border-radius: 10px;
+}
+.img-container{
+    width: 80px;
+    height: 80px;
+    margin: 0 auto;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.text-container h2{
+    color: var(--White);
+    text-align: center;
+    font-weight: 400;
+    margin-top: 24px;
+} 
+.text-container .location{
+    color: var(--Green);
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 5px;
+} 
+.text-container .job{
+    color: var(--White);
+    font-size: 12px;
+    margin-top: 24px;
+    text-align: center;
+}
+.links-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 24px;
+    gap: 20px;
+}
+.links-container a{
+    display: inline-block;
+    padding: 8px;
+    background: var(--Grey700);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--White);
+    width: 250px;
+    text-align: center;
+    transition: all .5s;
+}
+.links-container a:hover{
+    background: var(--Green);
+    cursor: pointer;
+    color: var(--Grey900);
+    font-weight: 700;
+}
